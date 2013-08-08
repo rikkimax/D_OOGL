@@ -1,0 +1,6 @@
+[submodule "Build/Derelict3"]
+	path = Build/Derelict3
+	url = git@github.com:aldacron/Derelict3.git
+[submodule "Build/libX11"]
+	path = Build/libX11
+	url = https://github.com/rikkimax/libX11

@@ -1,0 +1,40 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Build/gl/gl/context_x11.d">
+    <Files>
+      <File FileName="Build/gl/gl/context_x11.d" Line="30" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="Build" expanded="True" selected="True">
+            <Node name="Derelict3" expanded="True">
+              <Node name="import" expanded="True">
+                <Node name="derelict" expanded="True">
+                  <Node name="opengl3" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="gl" expanded="True">
+              <Node name="gl" expanded="True" />
+              <Node name="window" expanded="True" />
+            </Node>
+            <Node name="libX11" expanded="True">
+              <Node name="deimos" expanded="True">
+                <Node name="X11" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="samples" expanded="True">
+              <Node name="ShaderDraw" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
