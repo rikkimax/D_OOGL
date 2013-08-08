@@ -1,5 +1,5 @@
 D_OOGL
-======
+------
 
 Port of OOGL (opengl OOP wrapper) in D. Original repo https://github.com/Overv/OOGL
 
@@ -35,5 +35,16 @@ Ported all.
 * gl.gl.vertexarray ported fully.
 * gl.gl.vertexbuffer ported fully.
 
+**samples**
+* triangle ported
+* transformfeedback modified to reflect new class to handle it.
+* stencilreflect not ported. needs mesh/image loading.
+* shadowmapping not ported. needs mesh/image loading.
+
 With reguards to mesh loading. The mesh loading mechanism that was originally there only loaded obj's. It should only support mesh being stored. An external lib should load the data into it.
 Image loading required libjpeg and libpng. Again same with mesh loading it was removed. It still can be used for storing as mesh's are.
+
+## Features that has been added
+
+**gl**
+* gl.gl.transformfeedback The existing implementation was buggy and incomplete. Added this to fix this issue. Added query capabilities on it as well.
