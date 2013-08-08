@@ -7,7 +7,12 @@ Port of OOGL (opengl OOP wrapper) in D. Original repo https://github.com/Overv/O
 
 **gl.math**
 
-Ported all.
+* mat3 ported
+* mat4 ported
+* vec2 ported
+* vec3 ported
+* vec4 ported
+* util ported
 
 **util**
 * gl.util.color has been ported fully
