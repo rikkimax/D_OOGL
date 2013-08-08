@@ -5,22 +5,23 @@ Port of OOGL (opengl OOP wrapper) in D. Original repo https://github.com/Overv/O
 
 ## Features that have been ported:
 
-** gl.math **
+**gl.math**
+
 Ported all.
 
-** util **
+**util**
 * gl.util.color has been ported fully
 * gl.util.image has not been ported fully. Only interface
 * gl.util.mesh has not been ported fully. Only interface.
 * gl.util.bytebuffer not ported can be emulated with a dynamic array.
 
-** window **
+**window**
 * gl.window.event ported fully.
 * gl.window.window ported fully.
 * gl.window.window_x11 ported fully.
 * gl.window.window_win32 not ported.
 
-** gl **
+**gl**
 * gl.gl.context ported fully.
 * gl.gl.context_x11 ported fully.
 * gl.gl.context_win32 not ported.
