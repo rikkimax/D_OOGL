@@ -44,8 +44,11 @@ void main(){
 	bool once = true;
 	
 	Event ev;
-	while(window.isOpen()) {
-		while(window.getEvent(ev)){}
+L1: while (window.isOpen()) {
+		while(window.getEvent(ev) && window.isOpen()) {
+			if (ev.type == event_t.Close)
+				break L1;
+		}
 		
 		if (once) {
 			tf.begin();

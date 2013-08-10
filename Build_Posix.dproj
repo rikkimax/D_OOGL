@@ -14,7 +14,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>../bin/Debug</OutputPath>
+    <OutputPath>..\bin\Debug</OutputPath>
     <ObjectsDirectory>../obj/Debug</ObjectsDirectory>
     <UnittestMode>false</UnittestMode>
     <OutputName>Build</OutputName>
@@ -23,7 +23,7 @@
     <DebugLevel>0</DebugLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>../bin/Release</OutputPath>
+    <OutputPath>..\bin\Release</OutputPath>
     <Externalconsole>true</Externalconsole>
     <Target>Executable</Target>
     <OutputName>Build</OutputName>
@@ -33,7 +33,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>../bin/Unittest</OutputPath>
+    <OutputPath>..\bin\Unittest</OutputPath>
     <ObjectsDirectory>../obj/Unittest</ObjectsDirectory>
     <UnittestMode>true</UnittestMode>
     <OutputName>Build</OutputName>
@@ -88,6 +88,7 @@
     <Compile Include="Build\gl\window\window_x11.d" />
     <Compile Include="Build\gl\oogl.d" />
     <Compile Include="Build\gl\platform.d" />
+    <Compile Include="Build\gl\gl\context_win.d" />
     <Compile Include="Build\libX11\deimos\X11\extensions\randr.d" />
     <Compile Include="Build\libX11\deimos\X11\extensions\render.d" />
     <Compile Include="Build\libX11\deimos\X11\extensions\Xge.d" />

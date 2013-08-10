@@ -21,8 +21,11 @@ int main() {
 	vao.bindAttribute(program.getAttribute("position"), vbo, Type.Float, 3);
 
 	Event ev;
-	while(window.isOpen()) {
-		while(window.getEvent(ev)){}
+L1: while (window.isOpen()) {
+		while(window.getEvent(ev) && window.isOpen()) {
+			if (ev.type == event_t.Close)
+				break L1;
+		}
 
 		gl.clear();
 

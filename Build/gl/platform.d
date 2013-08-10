@@ -9,6 +9,18 @@ version(Posix) {
 	public import derelict.opengl3.glx;
 	public import derelict.opengl3.glxext;
 	public import core.sys.posix.sys.time;
+} else version(Windows) {
+	pragma(lib, "gdi32.lib");
+	pragma(lib, "user32.lib");
+
+	public import derelict.opengl3.wgl;
+	public import derelict.opengl3.wglext;
+	public import win32.wingdi;
+	public import win32.basetsd;
+	public import win32.winuser;
+	public import win32.windef;
+	public import win32.winnt;
+	public import win32.winbase;
 }
 
 enum type_t {

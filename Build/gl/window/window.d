@@ -8,6 +8,10 @@ version(Posix) {
 	import xtypes = derelict.util.xtypes;
 	import deimos.X11.Xlib;
 	alias WindowX11 Window;
+} else version(Windows) {
+	public import gl.window.window_win;
+	import core.sys.windows.windows;
+	alias WinWindow Window;
 }
 
 enum window_style_t {
@@ -35,6 +39,7 @@ abstract class WindowDef {
 		version(Windows) {
 			HWND window;
 			DWORD style;
+			size_t windowId;
 		} else version(Posix) {
 			xtypes.Window window;
 			XDisplay* display;
@@ -118,7 +123,7 @@ abstract class WindowDef {
 	protected {
 		version(Windows) {
 			LRESULT windowEvent(uint msg, WPARAM wParam, LPARAM lParam);
-			extern(C) static LRESULT windowEventHandler(HWND hWnd, uint msg, WPARAM wParam, LPARAM lParam);
+			extern(Windows) static LRESULT windowEventHandler(HWND hWnd, uint msg, WPARAM wParam, LPARAM lParam);
 		} else version(Posix) {
 			void enableFullscreen(bool enabled, int width = 0, int height = 0);
 			void windowEvent(ref XEvent event);

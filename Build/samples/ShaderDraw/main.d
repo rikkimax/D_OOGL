@@ -146,8 +146,11 @@ void main(){
 	program.setUniform(program.getUniform("backgroundColor"), white);
 
 	Event ev;
-	while(window.isOpen()) {
-		while(window.getEvent(ev)){}
+L1: while (window.isOpen()) {
+		while(window.getEvent(ev) && window.isOpen()) {
+			if (ev.type == event_t.Close)
+				break L1;
+		}
 		
 		gl.clear();
 		

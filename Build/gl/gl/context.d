@@ -15,6 +15,9 @@ version(Posix) {
 	public import gl.gl.context_x11;
 	import deimos.X11.Xlib;
 	alias X11Context Context;
+} else version(Windows) {
+	public import gl.gl.context_win;
+	alias WinContext Context;
 }
 
 enum buffer_t {
@@ -169,15 +172,14 @@ abstract class ContextDef {
 		}
 
 		float time();
+
+		void setVerticalSync(bool enabled);
 	}
 
 	this() {}
 
 	version(Windows) {
 		this(ubyte color, ubyte depth, ubyte stencil, uint antialias, HDC dc) {}
-		static this() {
-			assert(0);
-		}
 	}
 
 	version(Posix) {
@@ -192,7 +194,7 @@ abstract class ContextDef {
 			HDC dc;
 			HGLRC context;
 			
-			long timeOffset;
+			LARGE_INTEGER timeOffset;
 		}
 
 		version(Posix) {
