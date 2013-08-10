@@ -1,6 +1,6 @@
 module win32.uuid;
 
-//import win32.basetyps;
+import win32.basetyps;
 
 export
 extern(C) {

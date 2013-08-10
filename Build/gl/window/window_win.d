@@ -41,7 +41,7 @@ version(Windows) {
 			if (style & WindowStyle.Close) windowStyle |= WS_SYSMENU;
 			if (style & WindowStyle.Resize) windowStyle |= WS_SYSMENU | WS_THICKFRAME | WS_MAXIMIZEBOX;
 
-			hwnd = CreateWindow(appName.ptr,      // window class name
+			hwnd = CreateWindowA(appName.ptr,      // window class name
 			                    title.ptr,  // window caption
 			                    cast(uint)windowStyle,  // window style
 			                    CW_USEDEFAULT,        // initial x position

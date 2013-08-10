@@ -21,6 +21,12 @@ version(Posix) {
 	public import win32.windef;
 	public import win32.winnt;
 	public import win32.winbase;
+
+	// this symbol went missing so ehh
+	extern(Windows) SHORT GET_WHEEL_DELTA_WPARAM(WPARAM wparam)
+	{
+		return cast(SHORT) HIWORD(wparam);
+	}
 }
 
 enum type_t {

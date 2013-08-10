@@ -11,6 +11,11 @@
     <Compiler>DMD2</Compiler>
     <BaseDirectory>Build</BaseDirectory>
     <IncrementalLinking>true</IncrementalLinking>
+    <Includes>
+      <Includes>
+        <Path>P:\D_OOGL\Build\DWinProgramming\WindowsAPI</Path>
+      </Includes>
+    </Includes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +26,17 @@
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
-    <ExtraCompilerArguments>-m64</ExtraCompilerArguments>
+    <Libs>
+      <Libs>
+        <Lib>../bin/Debug/DWinProgramming.lib</Lib>
+      </Libs>
+    </Libs>
+    <VersionIds>
+      <VersionIds>
+        <String>WindowsXP</String>
+        <String>Unicode</String>
+      </VersionIds>
+    </VersionIds>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>..\bin\Release</OutputPath>
@@ -90,14 +105,9 @@
     <Compile Include="Build\gl\window\window_x11.d" />
     <Compile Include="Build\gl\oogl.d" />
     <Compile Include="Build\gl\platform.d" />
-    <Compile Include="Build\win32\wingdi.d" />
-    <Compile Include="Build\win32\basetsd.d" />
-    <Compile Include="Build\win32\winuser.d" />
-    <Compile Include="Build\win32\windef.d" />
     <Compile Include="Build\gl\window\window_win.d" />
-    <Compile Include="Build\win32\winnt.d" />
-    <Compile Include="Build\win32\winbase.d" />
     <Compile Include="Build\test.d" />
+    <Compile Include="Build\win32\uuid.d" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Build\win32\" />

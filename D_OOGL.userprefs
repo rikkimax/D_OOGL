@@ -1,18 +1,25 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Build\DWinProgramming\WindowsAPI\win32\winuser.d">
+    <Files>
+      <File FileName="Build\DWinProgramming\WindowsAPI\win32\winuser.d" Line="1625" Column="2" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Option id="ShowAllFiles" value="True" />
-          <Node name="Build_Windows" expanded="True" selected="True">
+          <Node name="DWinProgramming" expanded="True" selected="True">
+            <Node name="DWinProgramming" expanded="True">
+              <Node name="WindowsAPI" expanded="True">
+                <Node name="win32" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+          <Node name="Build_Windows" expanded="True">
             <Node name="gl" expanded="True">
-              <Node name="gl" expanded="True" />
               <Node name="window" expanded="True" />
             </Node>
-            <Node name="samples" expanded="True">
-              <Node name="Triangle" expanded="True" />
-            </Node>
+            <Node name="win32" expanded="True" />
           </Node>
         </State>
       </Pad>
