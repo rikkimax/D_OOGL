@@ -24,15 +24,15 @@ version(Windows) {
 			wndclass.cbClsExtra    = 0;
 			wndclass.cbWndExtra    = 0;
 			wndclass.hInstance     = GetModuleHandleA(null);//hInstance;
-			wndclass.hIcon         = LoadIconA(NULL, cast(char*)IDI_APPLICATION);
-			wndclass.hCursor       = LoadCursorA(NULL, cast(char*)IDC_ARROW);
+			wndclass.hIcon         = LoadIconA(null, cast(char*)IDI_APPLICATION);
+			wndclass.hCursor       = LoadCursorA(null, cast(char*)IDC_ARROW);
 			wndclass.hbrBackground = cast(HBRUSH)GetStockObject(WHITE_BRUSH);
-			wndclass.lpszMenuName  = NULL;
+			wndclass.lpszMenuName  = null;
 			wndclass.lpszClassName = appName.ptr;
 
 			if(!RegisterClassA(&wndclass))
 			{
-				MessageBoxA(NULL, "This program requires Windows NT!", appName.ptr, MB_ICONERROR);
+				MessageBoxA(null, "This program requires Windows NT!", appName.ptr, MB_ICONERROR);
 				return;
 			}
 
@@ -48,9 +48,9 @@ version(Windows) {
 			                    CW_USEDEFAULT,        // initial y position
 			                    width,        // initial x size
 			                    height,        // initial y size
-			                    NULL,                 // parent window handle
-			                    NULL,                 // window menu handle
-			                    GetModuleHandleA(NULL),            // program instance handle
+			                    null,                 // parent window handle
+			                    null,                 // window menu handle
+			                    GetModuleHandleA(null),            // program instance handle
 			                    cast(void*)windowId);                // creation parameters
 			
 			int x = 0;
@@ -105,7 +105,7 @@ version(Windows) {
 				if (!open) return;
 				RECT rect = {0, 0, width, height};
 				AdjustWindowRect(&rect, style, false);
-				SetWindowPos(window, NULL, 0, 0, cast(uint)(rect.right - rect.left), cast(uint)(rect.bottom - rect.top), SWP_NOMOVE | SWP_NOZORDER);
+				SetWindowPos(window, null, 0, 0, cast(uint)(rect.right - rect.left), cast(uint)(rect.bottom - rect.top), SWP_NOMOVE | SWP_NOZORDER);
 			}
 			
 			override void setTitle(string title) {
@@ -127,7 +127,7 @@ version(Windows) {
 			override bool getEvent(ref Event ev) {
 				// Fetch new events
 				MSG msg;
-				while (PeekMessageA(&msg, NULL, 0, 0, PM_REMOVE))
+				while (PeekMessageA(&msg, null, 0, 0, PM_REMOVE))
 				{
 					TranslateMessage(&msg);
 					DispatchMessageA(&msg);
@@ -316,7 +316,7 @@ version(Windows) {
 					case WM_CREATE:
 						window = windows[cast(size_t)((cast(LPCREATESTRUCTA)lParam).lpCreateParams)];
 						window.window = hwnd;
-						SetWindowLongA(hwnd, GWL_USERDATA, cast(size_t)window.windowId);
+						SetWindowLongA(hwnd, GWL_USERDATA, cast(int)window.windowId);
 						assert(cast(size_t)(GetWindowLongA(hwnd, GWL_USERDATA)) == window.windowId);
 						return 0;
 					case WM_DESTROY:
