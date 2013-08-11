@@ -24,8 +24,8 @@ version(Windows) {
 			wndclass.cbClsExtra    = 0;
 			wndclass.cbWndExtra    = 0;
 			wndclass.hInstance     = GetModuleHandleA(null);//hInstance;
-			wndclass.hIcon         = LoadIconA(NULL, IDI_APPLICATION);
-			wndclass.hCursor       = LoadCursorA(NULL, IDC_ARROW);
+			wndclass.hIcon         = LoadIconA(NULL, cast(char*)IDI_APPLICATION);
+			wndclass.hCursor       = LoadCursorA(NULL, cast(char*)IDC_ARROW);
 			wndclass.hbrBackground = cast(HBRUSH)GetStockObject(WHITE_BRUSH);
 			wndclass.lpszMenuName  = NULL;
 			wndclass.lpszClassName = appName.ptr;
