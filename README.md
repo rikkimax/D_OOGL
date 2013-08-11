@@ -24,7 +24,7 @@ Port of OOGL (opengl OOP wrapper) in D. Original repo https://github.com/Overv/O
 * gl.window.event ported fully.
 * gl.window.window ported fully.
 * gl.window.window_x11 ported fully.
-* gl.window.window_win32 ported but limited to 32bit only (blame DWinProgramming not me).
+* gl.window.window_win32 ported fully.
 
 **gl**
 * gl.gl.context ported fully.
@@ -57,5 +57,5 @@ Image loading required libjpeg and libpng. Again same with mesh loading it was r
 
 ## Notes about compiling
 Remember the snippet -L/SUBSYSTEM:WINDOWS for removing windows console.
-Limited to windows 32bit, 64/32 is both supported for posix.
 Mac OSX has not been tested but should work as per posix if x server is installed.
+64bit and 32bit should be compilable on Windows XP+ (tested on Windows 7) and Posix.
