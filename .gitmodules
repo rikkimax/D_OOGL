@@ -4,9 +4,6 @@
 [submodule "Build/libX11"]
 	path = Build/libX11
 	url = https://github.com/rikkimax/libX11
-[submodule "Build/DWinProgramming"]
-	path = Build/DWinProgramming
-	url = https://github.com/AndrejMitrovic/DWinProgramming.git
 [submodule "Build/WindowsAPI"]
 	path = Build/WindowsAPI
 	url = https://github.com/AndrejMitrovic/WindowsAPI.git
