@@ -5,7 +5,7 @@
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Option id="ShowAllFiles" value="True" />
-          <Node name="Build_Windows" expanded="True" selected="True" />
+          <Node name="Build_Windows" selected="True" />
         </State>
       </Pad>
     </Pads>

@@ -5,6 +5,8 @@ Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "Build_Posix", "Build_Posix.
 EndProject
 Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "Build_Windows", "Build_Windows.dproj", "{2ACF1EDB-9695-4D42-848E-87966DCCCF84}"
 EndProject
+Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "WindowsAPI", "WindowsAPI.dproj", "{127D7D60-C554-4FC7-A7F8-9A55BCEA2503}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,6 +14,12 @@ Global
 		Unittest|Any CPU = Unittest|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{127D7D60-C554-4FC7-A7F8-9A55BCEA2503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{127D7D60-C554-4FC7-A7F8-9A55BCEA2503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{127D7D60-C554-4FC7-A7F8-9A55BCEA2503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{127D7D60-C554-4FC7-A7F8-9A55BCEA2503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{127D7D60-C554-4FC7-A7F8-9A55BCEA2503}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
+		{127D7D60-C554-4FC7-A7F8-9A55BCEA2503}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
 		{2ACF1EDB-9695-4D42-848E-87966DCCCF84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2ACF1EDB-9695-4D42-848E-87966DCCCF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ACF1EDB-9695-4D42-848E-87966DCCCF84}.Release|Any CPU.ActiveCfg = Release|Any CPU

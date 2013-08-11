@@ -13,7 +13,7 @@
     <IncrementalLinking>true</IncrementalLinking>
     <Includes>
       <Includes>
-        <Path>P:\D_OOGL\Build\DWinProgramming\WindowsAPI</Path>
+        <Path>P:\D_OOGL\Build\WindowsAPI</Path>
       </Includes>
     </Includes>
   </PropertyGroup>
@@ -26,6 +26,12 @@
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
+    <Libs>
+      <Libs>
+        <Lib>../bin/Debug/WindowsAPI.lib</Lib>
+      </Libs>
+    </Libs>
+    <ExtraCompilerArguments>-m64</ExtraCompilerArguments>
     <VersionIds>
       <VersionIds>
         <String>WindowsXP</String>
