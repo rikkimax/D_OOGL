@@ -5,7 +5,10 @@
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Option id="ShowAllFiles" value="True" />
-          <Node name="Build_Windows" selected="True" />
+          <Node name="Build_Windows" expanded="True">
+            <Node name="gl" expanded="True" />
+            <Node name="test.d" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
