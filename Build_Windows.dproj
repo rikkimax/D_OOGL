@@ -233,6 +233,7 @@
     <Compile Include="Build\WindowsAPI\win32\ws2tcpip.d" />
     <Compile Include="Build\WindowsAPI\win32\wtypes.d" />
     <Compile Include="Build\WindowsAPI\win32\oleidl.d" />
+    <Compile Include="Build\gl\gl\renderbuffer.d" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Build\win32\" />

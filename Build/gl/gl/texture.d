@@ -79,6 +79,7 @@ enum internal_format_t {
 	SRGB8A8 = GL_SRGB8_ALPHA8,
 	SRGBA = GL_SRGB_ALPHA
 }
+alias internal_format_t InternalFormat;
 
 enum format_t {
 	Red = GL_RED,
