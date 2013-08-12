@@ -34,7 +34,7 @@ Port of OOGL (opengl OOP wrapper) in D. Original repo https://github.com/Overv/O
 * gl.gl.framebuffer ported fully.
 * gl.gl.gc not ported. Caused issues with type system.
 * gl.gl.program ported fully.
-* gl.gl.renderbuffer not ported.
+* gl.gl.renderbuffer ported fully.
 * gl.gl.shader ported fully.
 * gl.gl.texture ported fully.
 * gl.gl.vertexarray ported fully.
