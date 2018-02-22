@@ -3,6 +3,9 @@ D_OOGL
 
 Port of OOGL (opengl OOP wrapper) in D. Original repo https://github.com/Overv/OOGL
 
+## License
+Boost, OOGL has been relicensed to Boost, so it is reflected here (although code has not been updated).
+
 ## Features that have been ported:
 
 **gl.math**
